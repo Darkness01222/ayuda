@@ -5,7 +5,7 @@
   $dbname = "proyecto";
   
   // Crear conexión
-  $conn = new mysqli_connect($servername, $username, $password, $dbname);
+  $conn = new mysqli($servername, $username, $password, $dbname);
   
   // Comprobar conexión
   if ($conn->connect_error) {
