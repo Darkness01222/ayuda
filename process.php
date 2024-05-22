@@ -28,15 +28,4 @@ if (isset($_POST['action']) && $_POST['action'] == 'update') {
     exit();
 }
 
-$item = null;
-if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
-    $id = $_GET['id'];
-    $stmt = $conn->prepare("SELECT * FROM items WHERE id = ?");
-    $stmt->bind_param("i", $id);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $item = $result->fetch_assoc();
-    $stmt->close();
-}
-
 ?>
