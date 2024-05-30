@@ -2,7 +2,7 @@
 include 'db.php';
 
 // Leer todos los items
-$items = $conn->query("SELECT * FROM items");
+//$items = $conn->query("SELECT * FROM items");
 ?>
 
 <!DOCTYPE html>
