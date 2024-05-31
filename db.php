@@ -1,5 +1,5 @@
 <?php
-  $servername = "proyectofinaldb.mysql.database.azure.com";
+  $servername = "finalv2.mysql.database.azure.com";
   $username = "DBUser";
   $password = "Darkness01222591837";
   $dbname = "proyecto";
