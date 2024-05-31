@@ -10,7 +10,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'create') {
     $stmt->bind_param("ssi", $nombre, $descripcion, $cantidad);
     $stmt->execute();
     $stmt->close();
-    header("Location: index.php");
+    header("Location: index.html");
     exit();
 }
 
@@ -24,7 +24,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'update') {
     $stmt->bind_param("ssii", $nombre, $descripcion, $cantidad, $id);
     $stmt->execute();
     $stmt->close();
-    header("Location: index.php");
+    header("Location: index.html");
     exit();
 }
 // Función para eliminar un item
@@ -34,7 +34,7 @@ if (isset($_GET['delete'])) {
     $stmt->bind_param("i", $id);
     $stmt->execute();
     $stmt->close();
-    header("Location: crud.php");
+    header("Location: index.html");
     exit();
 }
 ?>
